@@ -60,7 +60,7 @@ module.exports = function(grunt) {
           'js/tab.js',
           'js/affix.js'
         ],
-        dest: 'dist/js/<%= pkg.name %>.js'
+        dest: '../../js/<%= pkg.name %>.js'
       }
     },
 
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
       },
       bootstrap: {
         src: ['<%= concat.bootstrap.dest %>'],
-        dest: 'dist/js/<%= pkg.name %>.min.js'
+        dest: '../../js/<%= pkg.name %>.min.js'
       }
     },
 
@@ -82,25 +82,25 @@ module.exports = function(grunt) {
       },
       bootstrap: {
         src: ['less/bootstrap.less'],
-        dest: 'dist/css/<%= pkg.name %>.css'
+        dest: '../../css/<%= pkg.name %>.css'
       },
       min: {
         options: {
           compress: true
         },
         src: ['less/bootstrap.less'],
-        dest: 'dist/css/<%= pkg.name %>.min.css'
+        dest: '../../css/<%= pkg.name %>.min.css'
       },
       theme: {
         src: ['less/theme.less'],
-        dest: 'dist/css/<%= pkg.name %>-theme.css'
+        dest: '../../css/<%= pkg.name %>-theme.css'
       },
       theme_min: {
         options: {
           compress: true
         },
         src: ['less/theme.less'],
-        dest: 'dist/css/<%= pkg.name %>-theme.min.css'
+        dest: '../../css/<%= pkg.name %>-theme.min.css'
       }
     },
 
@@ -108,7 +108,7 @@ module.exports = function(grunt) {
       fonts: {
         expand: true,
         src: ["fonts/*"],
-        dest: 'dist/'
+        dest: '../../'
       }
     },
 
