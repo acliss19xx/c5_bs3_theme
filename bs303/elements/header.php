@@ -14,4 +14,25 @@
 
 	</head>
 	<body>
+		<div class="container">
 
+			<div id="header" class ="col-sm-12">
+				<?php
+				$a = new GlobalArea('Site Name');
+				$a->display();
+				?>
+			</div>
+
+			<div id="header-nav" class="col-sm-12 container">
+				<?php
+				$a = new GlobalArea('Header Nav');
+				$a->display();
+				?>
+			</div>
+
+			<div id="header-image" class="col-sm-12 container">
+				<?php
+				$a = new Area('Header Image');
+				$a->display($c);
+				?>
+			</div>
